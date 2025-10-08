@@ -101,15 +101,15 @@ public class LevinNSolution {
 class Cell {
     /** A boolean to define whether the cell is a mine. **/
     private  boolean isMine = false;
-    /** A boolean to track the mines in the vicinity of the cell. **/
-    private int theMinesNearby;
+    /** An int to track the number mines in the vicinity of the cell. **/
+    private int myNearbyMineCount;
     /** Sets the cell to a mine cell. **/
     public void setMine(){
         isMine = true;
     }
-    /** Adds a count of another mine nearby. **/
+    /** Adds an instance of another mine nearby. **/
     public void addMineNearby(){
-        theMinesNearby++;
+        myNearbyMineCount++;
     }
 
     /**
@@ -125,6 +125,6 @@ class Cell {
      * @return  Returns the number of found mines nearby.
      */
     public int getMinesNearby() {
-        return theMinesNearby;
+        return myNearbyMineCount;
     }
 }
