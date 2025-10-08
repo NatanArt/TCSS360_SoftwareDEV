@@ -3,8 +3,20 @@ package GroupAssignment1.RoenESolution;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+/**
+ * This program takes an input of integers n and m,
+ * followed by a minesweeper field of n rows and m cols
+ * consisting of safe spots and mines. It prints out the
+ * same field but with the minesweeper numbers.
+ *
+ * @author Evin Roen
+ * @version Autumn 2025
+ */
 public class RoenESolution {
 
+    /**
+     * This constant represents the character for a mine.
+     */
     public static final char MINE = '*';
 
     /**
