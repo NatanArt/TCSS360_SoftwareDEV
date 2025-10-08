@@ -59,8 +59,9 @@ public class RoenESolution {
      */
     public static void printOutput(final ArrayList<String[]> theFields) {
         ArrayList<String> solution = new ArrayList<>();
+        var c = 1;
         for (String[] field : theFields) {
-            solution.add(solveField(field));
+            solution.add(solveField(field, c++));
         }
         for (String line : solution) {
             System.out.println(line);
@@ -70,10 +71,11 @@ public class RoenESolution {
     /**
      * Creates a solution field based on the given input field.
      * @param theField the field from the input.
+     * @param theCount the number for the field.
      * @return a string solution to the input field.
      */
-    private static String solveField(final String[] theField) {
-        String solution = "";
+    private static String solveField(final String[] theField, final int theCount) {
+        String solution = "Field #" + theCount + ":\n";
         for (int i = 0; i < theField.length; i++) {
             String line = theField[i];
             for (int j = 0; j < line.length(); j++) {
