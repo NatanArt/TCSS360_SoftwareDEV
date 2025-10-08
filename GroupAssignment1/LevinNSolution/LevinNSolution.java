@@ -1,6 +1,14 @@
 package LevinNSolution;
 import java.util.Scanner;
 
+/**
+ * A minesweeper translation application.
+ * Translates user text input "minesweeper fields" into text "field" outputs
+ * with mines and cells with counts of mines nearby.
+ *
+ * @author nlevin11
+ * @version 10/8/25
+ */
 public class LevinNSolution {
     /** A constant char for mine cells. **/
     public static final char MINE = '*';
@@ -16,7 +24,14 @@ public class LevinNSolution {
             fieldNumber++;
         }
     }
-    /** A method to convert user input into an array of cells. **/
+
+    /**
+     * A method to convert user input into an array of cells.
+     * Stops running once termination line "0 0" is reached
+     * @param theScan   A scanner for user input conversion.
+     * @param theFieldNumber    A counter for the number of inputted fields.
+     * @return  Returns true in all cases except for when the termination line is found.
+     */
     public static boolean setField(Scanner theScan, int theFieldNumber) {
         int row = theScan.nextInt();
         int col = theScan.nextInt();
@@ -96,11 +111,19 @@ class Cell {
     public void addMineNearby(){
         theMinesNearby++;
     }
-    /** Returns whether the cell is a mine. **/
+
+    /**
+     * A method to access whether a cell is a mine.
+     * @return  Returns a boolean value for whether the cell is a mine.
+     */
     public boolean isMine() {
         return isMine;
     }
-    /** Returns the number of mines nearby. **/
+
+    /**
+     * A method to store the number of mines nearby.
+     * @return  Returns the number of found mines nearby.
+     */
     public int getMinesNearby() {
         return theMinesNearby;
     }
