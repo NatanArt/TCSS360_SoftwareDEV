@@ -1,6 +1,5 @@
 package GroupAssignment1.OfficialTeamSolution;
 
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.util.Random;
@@ -16,8 +15,7 @@ public class MinesweeperTestGenerator {
 
     // Field to hold the PrintWriter object for file output
     private static PrintWriter writer;
-    private static final String OUTPUT_DIRECTORY = "C:\\Users\\njart\\UWT\\TCSS360\\TCSS360_SoftwareDEV\\GroupAssignment1\\OfficialTeamSolution\\";
-    private static final String OUTPUT_FILENAME = OUTPUT_DIRECTORY + "minefield_inputs.txt";
+    private static final String OUTPUT_FILENAME = "minefield_inputs.txt";
 
     /**
      * Generates an n x m Minesweeper field with a specified mine density.
@@ -52,7 +50,7 @@ public class MinesweeperTestGenerator {
     public static void main(String[] args) {
         try {
             // Initialize the PrintWriter to write to the specified file
-            writer = new PrintWriter(new File(OUTPUT_FILENAME));
+            writer = new PrintWriter(OUTPUT_FILENAME);
             System.out.println("Generating test cases and writing to " + OUTPUT_FILENAME + "...");
 
             // --- Test Case 1: Small Field ---
