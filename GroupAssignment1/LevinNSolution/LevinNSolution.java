@@ -1,4 +1,4 @@
-package LevinNSolution;
+package GroupAssignment1.LevinNSolution;
 import java.util.Scanner;
 
 /**
