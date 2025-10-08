@@ -98,6 +98,10 @@ public class LevinNSolution {
     }
 }
 
+/**
+ * A Cell object to represent cells on a "field".
+ * Contains information on nearby mines and whether the cell itself is a mine.
+ */
 class Cell {
     /** A boolean to define whether the cell is a mine. **/
     private  boolean isMine = false;
