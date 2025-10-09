@@ -11,11 +11,11 @@ Nathan Levin
 - Configuring the repository and folder structure for group work had the most issues. Allowing 
 multiple users and understanding which directories should be set to "source" and what to define 
 as packages took more reworking than the program code.
-- Personal solution ran slower than group solution due to the order of processing and displaying
+- My personal solution ran slower than group solution due to the order of processing and then displaying
 results.
 
 Evin Roen
--
+- "It took around 4 hours for me"
 
 Natan Artemiev
 - "I would say I took around 4 hours collectively on my solution, and about an 1hr on the group work."
